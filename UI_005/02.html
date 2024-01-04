@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    section {
+      background-color: darkgray;
+    }
+    h1 {
+      background-color: black;
+      color: wheat;
+    }
+    section div {
+      padding: 15px;
+    }
+    section label {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    section label:hover {
+      background-color: darkslategray;
+    }
+  </style>
+  <body>
+    <section>
+      <h1>Spitz</h1>
+      <div>
+        개의 품종 또는 특정 형질을 가진 개들의 집단. 아마도 늑대 중에서 인간에게 가장 먼저 우호적 제스처를 보냈을 존재의 후손으로 생각된다. 북극 근처
+        대륙, 특히 아시아(시베리아) 지방에서 원주민들이 다양한 용도로 키우던 개들이 스피츠의 기원이다. 어원은 독일어인
+        <label class="info">Spitze[1]</label>. 뜻은 최고, 꼭대기, 정상, 뾰족함 쯤 되시겠다. 스피츠는 좁게는 특종 품종인 저먼 스피츠와 재패니즈
+        스피츠를 지칭하는 말이기도 하지만, 넓게는 스피츠, 시베리안 허스키, 사모예드, 차우차우, 진돗개, 풍산개, 아키타견, 시바견, 포메라니안, 야쿠탄
+        라이카 등 늑대와 비슷한 유전적 형질을 지닌 견종을 통칭해서 부르는 견종 그룹을 의미하기도 한다.
+      </div>
+    </section>
+  </body>
+  <script>
+    const info = document.querySelector("section>div>label.info");
+    const info_click_event = () => {
+      alert = "[1]독일어의 외래어 표기법상 '슈피체'가 정확하나, 국립국어원에선 스피츠로 표기하도록 정해 놓았다";
+    };
+    info.addEventListener("click", info_click_event);
+  </script>
+</html>

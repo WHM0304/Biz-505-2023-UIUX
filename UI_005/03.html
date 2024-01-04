@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    section.look {
+      display: flex;
+      background-color: coral;
+    }
+
+    section.look > div {
+      display: flex;
+      padding: 5px 14px;
+      justify-content: center;
+    }
+
+    section div > div > ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      list-style: georgian;
+      color: antiquewhite;
+    }
+    section > div.look2 {
+      text-align: center;
+      flex: 1;
+      color: blue;
+    }
+    section > div.look2:hover {
+      cursor: pointer;
+    }
+    p {
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <section class="look">
+      <div>
+        <div><img src="./images/0003.jpg" width="200px" /></div>
+        <div>
+          <ul>
+            <li>애정표현이다</li>
+            <li>뭔가 원하는게 있다</li>
+            <li>지시를 기다리고 있다</li>
+            <li>행동을 관찰하고 있다</li>
+            <li>경계하고 있다</li>
+          </ul>
+        </div>
+        <div></div>
+      </div>
+    </section>
+    <section>
+      <div class="look2">
+        <a class="detail">자세히알아보기</a>
+      </div>
+    </section>
+  </body>
+  <script>
+    const detail = document.querySelector(".detail");
+    const detail_click_event = () => {
+      document.location.href = "https://m.blog.naver.com/kbjvet/223061129056";
+    };
+    detail.addEventListener("click", detail_click_event);
+  </script>
+</html>
