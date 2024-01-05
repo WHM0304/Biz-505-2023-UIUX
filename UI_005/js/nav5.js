@@ -13,7 +13,6 @@
  * nav.main_nav tag 에 event 를 설정하고
  * li tag 가 클릭 되었을 때 할일을 지정하였다.
  */
-
 const main_nav = document.querySelector("nav.main_nav");
 
 main_nav.addEventListener("click", (event) => {

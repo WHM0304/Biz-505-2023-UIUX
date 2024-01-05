@@ -25,4 +25,5 @@ const img_container_click_handler = (event) => {
     }
   }
 };
+
 img_container.addEventListener("click", img_container_click_handler);
