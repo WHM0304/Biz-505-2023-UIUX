@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  padding: 1rem;
+}
+
+nav ul {
+  background-color: black;
+  list-style: none;
+  display: flex;
+}
+nav li {
+  padding: 0.7rem;
+  color: yellow;
+}
+nav li:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+nav li:nth-of-type(4),
+nav li:nth-of-type(5) {
+  margin-left: auto;
+}
+section {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+}
+section div.login {
+  text-align: center;
+  font-size: 24px;
+  padding: 2rem;
+}
+
+section .section {
+  border: 1px solid red;
+  padding: 5rem;
+}
+section > div div {
+  display: flex;
+  padding: 10px 20px;
+}
+section > div {
+  display: flex;
+  flex-direction: column;
+}
+
+div label {
+  width: 100%;
+  color: blue;
+
+  margin-right: 0.4rem;
+  text-align: right;
+}
+input {
+  width: 60%;
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+button {
+  margin-left: 40%;
+  background-color: aquamarine;
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  color: white;
+}
+button:hover {
+  opacity: 0.5;
+}
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 1rem;
+}
