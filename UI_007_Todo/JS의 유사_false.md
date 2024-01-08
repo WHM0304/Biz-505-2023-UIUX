@@ -21,20 +21,22 @@ const value4 = NaN; // Not a Number
 
 ```js
 const value = "";
-if(value){}
-if(value !== "){}
+if (value) {
+}
+if (value !== "") {
+}
 
 const num = 0;
-if(num){
-    console.log("ok")
-} else{
-    console.log("fail")
+if (num) {
+  console.log("ok");
+} else {
+  console.log("fail");
 }
 // 위아래 같은 코드
-if(num !== 0){
-    console.log("OK")
-} else{
-    console.log("fail")
+if (num !== 0) {
+  console.log("OK");
+} else {
+  console.log("fail");
 }
 ```
 
